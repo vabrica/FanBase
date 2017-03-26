@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login/Register - FanBase</title>
+
+	<!-- FavIcon -->
+	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+	<!-- Font awsome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Date picker styles -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+
+	<!-- Custom style -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:url(fan_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="Fanbase.html">Home</a></li>
+					<li class="active"><a href="#">Login/Register</a></li>
+					<li><a href="#artists">Artists</a></li>
+					<li><a href="#venue">Venue</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about us">About us</a></li>					
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Login</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container row center-block" style="font-family: 'Special Elite', cursive; margin-top:100px;  color: #ff3330">
+		<h1> Priority Tickets for Real Fans</h1>
+	</div>
+
+	<div class="container row center-block form-fanbase">
+		<h2 style=" color:#ff3330">Returning User</h2>
+		<div class="row">
+			<div class="col-xs-6">
+				
+					<h3>Fans <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control input-md" id="txtEmailFanL" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control input-md" id="txtPasswordFanL"  placeholder="Password">
+					</div>
+					<p><button id="btnLoginFan" class="btn btn-secondary">Login</button></p>
+					<p><button id="btnLogoutFan" class="btn btn-action hide">Log out</button></p>
+					<p><span class="psw">Forgot <a href="#">password?</a></span></p>
+				
+			</div>
+			<div class="col-xs-6">
+				
+					<h3>Artists <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" id="txtEmailArtL" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" id="txtPasswordArtL"  placeholder="Password">
+					</div>
+					<p><button id="btnLoginArt" class="btn btn-secondary">Login</button></p>
+					<p><button id="btnLogoutArt" class="btn btn-action hide">Log out</button></p>
+					<p><span class="psw">Forgot <a href="#">password?</a></span></p>
+				
+			</div>
+		</div>
+		<h2 style="color:#ff3330">New to FanBase</h2>
+		<div class="row">
+		
+				<div class="col-xs-6">
+					<h3>Fans <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control input-md" id="txtEmailFan" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label>Confirm email</label>
+						<input type="email" class="form-control input-md" id="confemailF" placeholder="Email" onblur="confirmEmailF()">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control input-md" id="txtPasswordFan"  placeholder="Password">
+					</div>
+					<p><a id="btnSignUpFan" class="btn btn-default fanbase-pink" href="#" role="button">Sign Up</a></p>
+			
+			</div>
+			<div class="col-xs-6">
+				
+					<h3>Artists <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" id="txtEmailArt" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label>Confirm email</label>
+						<input type="email" class="form-control input-md" id="confemailA" placeholder="Email" onblur="confirmEmailA()">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" id="txtPasswordArt"  placeholder="Password">
+					</div>
+					<p><a id="btnSignUpArt" class="btn btn-default fanbase-pink" href="#" role="button">Sign Up</a></p>	
+					
+			</div>
+		
+	</div>
+</div>
+
+
+<div class="social-media text-center">
+	<spam style="padding-right:10px">Join us on</spam>
+	<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+	<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--Firebase-->
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+
+<!-- my js file -->
+<script type="text/javascript" src="login_registration-firebase.js"></script>
+
+</body>
+</html>
+
