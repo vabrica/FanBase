@@ -49,20 +49,28 @@ promiseA.catch(e => console.log(e.message));
 btnSignUpFan.addEventListener('click', e=> {
 	const emailF = txtEmailFan.value;
 	const passPF = txtPasswordFan.value;
-
 	const authF = firebase.auth();
-	const promiseF = authF.createUserWithEmailAndPassword(emailF,passPF);
-	promiseF.catch(e => console.log(e.message));
+
+	const promiseF = authF
+		.createUserWithEmailAndPassword(emailF,passPF)
+		.then(function(){
+			window.location.href = 'Registration_Fan.html';
+		})
+		.catch(e => console.log(e.message));
 });
 
 //Add SignUp Event Artist
 btnSignUpArt.addEventListener('click', e=> {
 	const emailA = txtEmailArt.value;
 	const passPA = txtPasswordArt.value;
-
 	const authA = firebase.auth();
-	const promiseA = authA.createUserWithEmailAndPassword(emailA,passPA);
-	promiseA.catch(e => console.log(e.message));
+
+	const promiseA = authA
+		.createUserWithEmailAndPassword(emailA,passPA);
+		then(function(){
+			window.location.href = 'Registration_Artist.html';
+		})
+		.catch(e => console.log(e.message));
 });
 
 //Log out Fan
