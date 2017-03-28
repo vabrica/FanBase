@@ -66,8 +66,8 @@ btnSignUpArt.addEventListener('click', e=> {
 	const authA = firebase.auth();
 
 	const promiseA = authA
-		.createUserWithEmailAndPassword(emailA,passPA)
-		.then(function(){
+		.createUserWithEmailAndPassword(emailA,passPA);
+		then(function(){
 			window.location.href = 'Registration_Artist.html';
 		})
 		.catch(e => console.log(e.message));

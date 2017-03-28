@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="styles.css">
 
 </head>
-<body style="background:url(fan_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+<body style="background:url(fan_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -62,16 +62,11 @@
 
 	<div class="container" style="margin-top: 100px">
 		<h1>Artist Signup</h1>
-		<h4 style="margin-top:-30px;margin-bottom:40px" class="text-center">Fill in the form below to sign up for your artist account in FanBase</h4>
-
+		<h4 style="margin-top:-30px; margin-bottom:40px" class="text-center">Fill in the form below to sign up for your artist account in FanBase</h4>
 		<div class="form-fanbase">
-
 			<form>
-
 				<h3><i class="fa fa-icon fa-user" style="color: #ff3330"></i> Artist Details</h3>
-
-				<hr />
-
+				<hr/>
 				<div class="row">
 					<div class="form-group col-md-4 col-sm-4">
 						<label for="name">Artist Name</label>
@@ -90,13 +85,9 @@
 						<textarea class="form-control input-md" id="about" rows="5"></textarea>
 					</div>
 				</div>
-
-				<hr />
-
+				<hr/>
 				<h3><i class="fa fa-icon fa-envelope-o" style="color: #ff3330"></i> Contact Information</h3>
-
-				<hr class="invisible">
-
+				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
 						<label for="address">Postal Address</label>
@@ -122,13 +113,9 @@
 						<button type="submit" class="btn btn-default btn-sm">Add Additional Contact</button>
 					</div>
 				</div>
-
-				<hr>
-
+				<hr/>
 				<h3><i class="fa fa-icon fa-credit-card" style="color: #ff3330"></i> Payment Information</h3>
-
-				<hr class="invisible">
-
+				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-4 col-sm-4">
 						<label for="bank-account">Bank Account Name</label>
@@ -143,13 +130,9 @@
 						<input type="text" class="form-control input-md" id="bic-swift" placeholder="">
 					</div>
 				</div>
-
-				<hr />
-
+				<hr/>
 				<h3><i class="fa fa-icon fa-shield" style="color: #ff3330"></i> Proof of authenticity</h3>
-
-				<hr class="invisible">
-
+				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-4 col-sm-4">
 						<label for="photo-id">Photo ID</label>
@@ -164,11 +147,9 @@
 						<input type="file" value="upload" class="form-control input-md" id="proof-registration">
 					</div>
 				</div>
-
-				<hr>
-
 				<button type="submit" class="btn btn-default fanbase-pink" onclick="pushArtists()">Submit registration for approval</button>
-
+				<hr/>
+				<progress value="0" max="100" id="uploader">0%</progress>
 			</form>
 		</div>
 
@@ -179,8 +160,6 @@
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
 		</div>
-
-		<progress value="0" max="100" id="uploader">0%</progress>
 
 		<!-- Firebase -->
 		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>

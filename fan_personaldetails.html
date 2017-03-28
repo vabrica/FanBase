@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Custom style -->
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body style="background:url(fan_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
@@ -61,23 +61,36 @@
 	</nav>
 
 	<div class="container" style="margin-top: 100px">
-		<h1>Fan Sign up</h1>
-		<h4 style="margin-top:-30px; margin-bottom:40px" class="text-center">Fill in the form below to sign up for your account in FanBase</h4>
+		<h1>Manage Account - Fan</h1>
+		<h4 style="margin-top:-30px; margin-bottom:40px" class="text-center">Change your fan account settings</h4>
 		<div class="form-fanbase">
 			<form>
-				<h3><i class="fa fa-icon fa-user" style="color: #ff3330"></i>  Details</h3>
+				<h3><i class="fa fa-icon fa-user" style="color: #ff3330"></i>  Alice Cooper Details</h3>
 				<hr/>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="name">First Name</label>
+						<label for="name">Email <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="Fname" placeholder="">
 					</div>
+					<div class="form-group col-md-6 col-sm-6">
+						<label for="name">Password <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<input type="text" class="form-control input-md" id="Fname" placeholder="">
+					</div>
+					<div class="form-group col-md-6 col-sm-6">
+						<label for="name">Confirm Password</label>
+						<input type="text" class="form-control input-md" id="Fname" placeholder="" onblur="confirmEmailA()">
+					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="tax-number">Surname</label>
+						<label for="name">First Name <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<input type="text" class="form-control input-md" id="Fname" placeholder="">
+
+					</div>
+					<div class="form-group col-md-12 col-sm-12">
+						<label for="tax-number">Surname <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="Surname" placeholder="">
 					</div>
 					<div class="form-group col-md-3 col-sm-3">
-						<label for="date-creation">Date of Birth</label>
+						<label for="date-creation">Date of Birth <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="DOB" placeholder="">
 					</div>
 				</div>
@@ -86,15 +99,15 @@
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="address">Postal Address Line 1</label>
+						<label for="address">Postal Address Line 1 <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="address1" placeholder="">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="address">Postal Address Line 2</label>
+						<label for="address">Postal Address Line 2 <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="address2" placeholder="">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="address">Postal Address Line 3</label>
+						<label for="address">Postal Address Line 3 <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="address3" placeholder="">
 					</div>
 				</div>
@@ -103,7 +116,7 @@
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-8 col-sm-12">
-						<label for="bank-account">Credit Card Number</label>
+						<label for="bank-account">Credit Card Number <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="credit-card" placeholder="">	
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
@@ -114,15 +127,15 @@
 				</div>
 				<div class="row">
 					<div class="form-group col-md-3 col-sm-3">
-						<label for="expiryDate">Expiry Date</label>
+						<label for="expiryDate">Expiry Date <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="expiryDate" placeholder="">
 					</div>
 					<div class="form-group col-md-2 col-sm-2">
-						<label for="cvn">CVN</label>
+						<label for="cvn">CVN <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="text" class="form-control input-md" id="cvn" placeholder="">
 					</div>
 					<div class="form-group col-md-3 col-sm-3">
-						<img src="card-back.png" alt="Card security code (CCV)" hspace="5" vspace="5" border="0" style=" padding-top: 20px; width: 48px;" />		
+						<img src="card-back.png" alt="Card security code (CCV)" hspace="5" vspace="5" border="0" style=" padding-top: 20px; width: 48px;" />					
 					</div>
 				</div>
 				<hr/>
@@ -130,11 +143,11 @@
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="photo-id">Photo ID</label>
+						<label for="photo-id">Photo ID <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="file" value="upload" class="form-control input-md" id="photo-id">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="proof-address">Proof of Address</label>
+						<label for="proof-address">Proof of Address <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
 						<input type="file" value="upload" class="form-control input-md" id="proof-address">
 					</div>
 				</div>
@@ -156,7 +169,7 @@
 		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
 		<!-- Firebase - Artist signup !!-->
-		<script src="reg_fan_js.js"></script>
+		<script src="js/reg_fan_js.js"></script>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
