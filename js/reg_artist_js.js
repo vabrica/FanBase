@@ -8,15 +8,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
-  // Get a reference to the database service
-  var database = firebase.database();
+// Get a reference to the database service
+var database = firebase.database();
   
-
 // pushing info into firebase
-function pushArtists()
-{
-
+function pushArtists(){
   var artistName = document.getElementById("name").value;
   var taxNumber = document.getElementById("tax-number").value;
   var dateCreation = document.getElementById("date-creation").value;
@@ -34,130 +30,103 @@ function pushArtists()
   var proofRegistration = document.getElementById("proof-registration").value;
 
 
-var mydata = database.ref('/Artists/');  // creates ref at Fans
-var postRef = mydata.push({'artistName':artistName,'taxNumber':taxNumber,'dateCreation':dateCreation, 'aboutArtist': aboutArtist,'postalAddress':postalAddress,'mainContact':mainContact, 'secContact': secContact,'mainEmail':mainEmail,'secEmail':secEmail, 'bankAccount': bankAccount,'iban':iban,'bicSwift':bicSwift, 'photoId': photoId,'proofAddress':proofAddress,'proofRegistration':proofRegistration, 'valid': "false"}); // adds unique key then the following child nodes
-var postID = postRef.key;  // saves unique key from above
+  var mydata = database.ref('/Artists/');  // creates ref at Fans
+  var postRef = mydata.push({'artistName':artistName,'taxNumber':taxNumber,'dateCreation':dateCreation, 'aboutArtist': aboutArtist,'postalAddress':postalAddress,'mainContact':mainContact, 'secContact': secContact,'mainEmail':mainEmail,'secEmail':secEmail, 'bankAccount': bankAccount,'iban':iban,'bicSwift':bicSwift, 'photoId': photoId,'proofAddress':proofAddress,'proofRegistration':proofRegistration, 'valid': "false"}); // adds unique key then the following child nodes
+  var postID = postRef.key;  // saves unique key from above
 
-console.log(postID) // posts unique key to console so it can be checked
-
+  console.log(postID) // posts unique key to console so it can be checked
 }
 
 var photoFile = document.getElementById("photo-id");
-
 var addressFile = document.getElementById("proof-address");
-
 var registrationFile = document.getElementById("proof-registration");
 
+//Listen for file selection
+photoFile.addEventListener('change', function(e) {
 
-      //Listen for file selection
+//Get File
+var file=e.target.files[0];
+//Create a storage reference
+var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
+//Upload File
+var task = storageRef.put(file);
 
-      
+//Update Progress Bar
+task.on('state_changed', 
 
-      photoFile.addEventListener('change', function(e) {
+function progress(snapshot) {
+  
+  var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
+  uploader.value = percentage;
 
-  //Get File
-  var file=e.target.files[0];
-  //Create a storage reference
-  var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
-  //Upload File
-  var task = storageRef.put(file);
+},   
 
-  //Update Progress Bar
-  task.on('state_changed', 
+function error (err) {
 
+},
+   
+function complete() {
+
+});
+
+});  
+
+addressFile.addEventListener('change', function(e) {
+
+//Get File
+var file=e.target.files[0];
+//Create a storage reference
+var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
+//Upload File
+var task = storageRef.put(file);
+
+//Update Progress Bar
+task.on('state_changed', 
+
+
+function progress(snapshot) {
+
+  var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
+  uploader.value = percentage;
+
+},
     
+function error (err) {
 
-    function progress(snapshot) {
+},
 
-      var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
+function complete() {
 
-      uploader.value = percentage;
-
-    },
-    
-    function error (err) {
-
-    },
-
-    
-    function complete() {
-
-    }
-
-    );
+});
 
 });  
 
 
+registrationFile.addEventListener('change', function(e) {
 
+//Get File
+var file=e.target.files[0];
+//Create a storage reference
+var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
+//Upload File
+var task = storageRef.put(file);
 
-      addressFile.addEventListener('change', function(e) {
+//Update Progress Bar
+task.on('state_changed', 
 
-  //Get File
-  var file=e.target.files[0];
-  //Create a storage reference
-  var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
-  //Upload File
-  var task = storageRef.put(file);
+function progress(snapshot) {
 
-  //Update Progress Bar
-  task.on('state_changed', 
-
+  var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
+  uploader.value = percentage;
+},
     
+function error (err) {
 
-    function progress(snapshot) {
-
-      var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
-
-      uploader.value = percentage;
-
-    },
-    
-    function error (err) {
-
-    },
-
-    
-    function complete() {
-
-    }
-
-    );
-
-});  
+},
 
 
-      registrationFile.addEventListener('change', function(e) {
+function complete() {
 
-  //Get File
-  var file=e.target.files[0];
-  //Create a storage reference
-  var storageRef = firebase.storage().ref('test_files_Artists/' + file.name);
-  //Upload File
-  var task = storageRef.put(file);
-
-  //Update Progress Bar
-  task.on('state_changed', 
-
-    
-
-    function progress(snapshot) {
-
-      var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
-
-      uploader.value = percentage;
-
-    },
-    
-    function error (err) {
-
-    },
-
-    
-    function complete() {
-
-    }
-
-    );
+});
 
 });  
