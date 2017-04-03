@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fan Preferences - FanBase</title>
+
+	<!-- FavIcon -->
+	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+	<!-- Font awsome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Date picker styles -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body-fan">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login_registration.html">Login-Register</a></li>
+					<li><a href="#about us">About us &amp; Contact</a></li>		
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="login_registration.html">Login</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	
+	<div id="main_div" class="container relative" style=" text-align:center; margin-top:50px">
+		<h1 style="margin-top:50px">Priority Tickets for Real Fans</h1>
+		<div class="form-fanbase">
+			<p class="absolute-text">Welcome Alice</a></p>
+
+			<form action="#" style="width:30%" class="center-block">
+
+				<div class="form-group right-inner-addon">
+					<i class="glyphicon glyphicon-search icon-link search-kw"></i>
+					<input type="search" class="form-control" style="font-family: 'Special Elite', cursive;" placeholder="Search for Artists, City or Venue" />
+				</div>
+				<div class="input-daterange input-group" id="datepicker">
+					<div class="form-group right-inner-addon">
+						<i class="glyphicon glyphicon-calendar icon-link"></i>
+						<input type="text" class="input form-control" style="font-family: 'Special Elite', cursive; " name="start" placeholder="From" />
+					</div>
+					<span class="input-group-addon" style="visibility: hidden; "></span>
+					<div class="form-group right-inner-addon">
+						<i class="glyphicon glyphicon-calendar icon-link"></i>
+						<input type="text" class="input form-control" style="font-family: 'Special Elite', cursive;" name="end" placeholder="To" />
+					</div>
+				</div>
+			</form>
+			<hr/>
+			<div class="row"> <!-- put the bandName here! -->
+				<div class="col-md-4 col-sm-4">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preference <span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a>1</a></li>
+								<li><a>2</a></li>
+								<li><a>3</a></li>
+								<li><a>4</a></li>
+								<li><a>5</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<input type="text" class="form-control input-md" id="" placeholder="Artist Name">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+				<div class="form-group col-md-3 col-sm-3">
+					<input type="text" class="form-control input-md" id="" placeholder="Official Fan Number - If Applicable">
+				</div>
+				<div class="form-group col-md-3 col-sm-3">
+					<input type="text" class="form-control input-md" id="" placeholder="Add Gig Id Attended - ALbum Purchased">
+				</div>
+				<button type="submit" class="btn btn-default fanbase-pink">Submit</button>
+				<i class="glyphicon glyphicon-plus" style="padding-left:15px; color: #ff3330" aria-hidden="true"></i>
+				<!-- Add JS function to add row -->
+			</div>
+
+		</div>
+
+
+		<div class="social-media text-center">
+			<spam style="padding-right:10px">Join us on</spam>
+			<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+		</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- calendar js bootstrap -->
+		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+		<!-- my js file -->
+		<script type="text/javascript" src="Fanbase-themed.js"></script>
+
+	</body>
+	</html>
+

@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Profile Artist - FanBase</title>
+	<title>Artist Gig Guide and Ticket Sale - FanBase</title>
 
 	<!-- FavIcon -->
 	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
@@ -26,7 +26,7 @@
 	<!-- Custom style -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background:url(fan_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+<body class="body-artist">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -41,18 +41,15 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="login_registration.html">Login/Register</a></li>
-					<li><a href="#artists">Artists</a></li>
-					<li><a href="#venue">Venue</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#about us">About us</a></li>					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login_registration.html">Login-Register</a></li>
+					<li><a href="#about us">About us &amp; Contact</a></li>		
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Login</a></li>
+							<li><a href="login_registration.html">Login</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Log out</a></li>
 						</ul>
@@ -62,32 +59,35 @@
 		</div>
 	</nav>
 
-
 	
 	<div id="main_div" class="container relative" style=" text-align:center; margin-top:50px">
 		<h1 style="margin-top:50px">Priority Tickets for Real Fans</h1>
 		<div class="form-fanbase">
 			<p class="absolute-text">Welcome U2</a></p>
-
-			<div class="row">
-			<div class="col-lg-3">
-					<div class="input-group">
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</div><!-- /btn-group -->
-						<input type="text" class="form-control" aria-label="...">
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-
-
-			</div>
+			<div class="row"> <!-- put the bandName here! -->
+					<div class="form-group col-md-1 col-sm-1">
+						<input type="text" class="form-control input-md" id="numTickets" placeholder="Num">
+					</div>
+					<div class="form-group col-md-3 col-sm-3">
+						<input type="text" class="form-control input-md" id="venue" placeholder="Venue">
+					</div>
+					<div class="form-group col-md-1 col-sm-1">
+						<input type="text" class="form-control input-md" id="" placeholder="ID">
+					</div>
+					<div class="form-group col-md-2 col-sm-2">
+						<input type="text" class="form-control input-md" id="date" placeholder="Date">
+					</div>
+					<div class="form-group col-md-1 col-sm-1">
+						<input type="text" class="form-control input-md" id="time" placeholder="Time">
+					</div>
+					<div class="form-group col-md-2 col-sm-2">
+						<input type="text" class="form-control input-md" id="priceTickets" placeholder="Price">
+					</div>
+					<button type="submit" class="btn btn-default fanbase-pink">Submit</button>
+					<i class="glyphicon glyphicon-plus" style="padding-left:15px; color: #ff3330" aria-hidden="true"></i>
+					<!-- Add JS function to add row -->
+				</div>
+				
 		</div>
 
 
