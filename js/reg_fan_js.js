@@ -31,7 +31,9 @@ function pushFans(){
 	var postRef = mydata.push({'firstName':firstName,'surname':surname,'dob':dob, 'addressLine1': addressLine1,'addressLine2':addressLine2,'addressLine3':addressLine3, 'creditCard': creditCard,'expiryDate':expiryDate,'cvn':cvn, 'photoId': photoId,'proofAddress':proofAddress, 'valid': "false"}); // adds unique key then the following child nodes
 	var postID = postRef.key;  // saves unique key from above
 
-	console.log(postID) // posts unique key to console so it can be checked
+	console.log(postID); // posts unique key to console so it can be checked
+
+	$('#myModal').modal('show')
 }
 
 var photoFile = document.getElementById("photo-id");

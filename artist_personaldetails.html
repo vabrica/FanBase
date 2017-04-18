@@ -6,10 +6,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Artist Signup - FanBase</title>
+	<title>Edit Personal Details - Artist - FanBase</title>
 
 	<!-- FavIcon -->
-	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,13 +35,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="login_registration.html">Login-Register</a></li>
-					<li><a href="#about us">About us &amp; Contact</a></li>						
+					<li><a href="about_us.html">About us &amp; Contact</a></li>						
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
@@ -62,15 +62,15 @@
 		<h4 style="margin-top:-30px; margin-bottom:40px" class="text-center">Change your artist account settings</h4>
 		<div class="form-fanbase">
 			<form>
-				<h3><i class="fa fa-icon fa-user" style="color: #ff3330"></i> U2 Details</h3>
+				<h3><i class="fa fa-icon fa-user"></i> U2 Details</h3>
 				<hr/>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="name">Email <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="name">Email <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="Fname" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="name">Password <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="name">Password <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="Fname" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
@@ -78,81 +78,81 @@
 						<input type="text" class="form-control input-md" id="Fname" placeholder="" onblur="confirmEmailA()">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="name">Artist Name <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="name">Artist Name <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="name" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="tax-number">Registered Tax Number <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="tax-number">Registered Tax Number <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="tax-number" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="date-creation">Date of Creation <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="date-creation">Date of Creation <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="date-creation" placeholder="">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="about">About the artist <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="about">About the artist <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<textarea class="form-control input-md" id="about" rows="5"></textarea>
 					</div>
 				</div>
 				<hr/>
-				<h3><i class="fa fa-icon fa-envelope-o" style="color: #ff3330"></i> Contact Information</h3>
+				<h3><i class="fa fa-icon fa-envelope-o"></i> Contact Information</h3>
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-12 col-sm-12">
-						<label for="address">Postal Address <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="address">Postal Address <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="address" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="contact-1">Main Contact <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="contact-1">Main Contact <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="contact-1" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="email-1">Main Contact Email Address <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="email-1">Main Contact Email Address <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="email" class="form-control input-md" id="email-1" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="contact-2">Secondary Contact <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="contact-2">Secondary Contact <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="contact-2" placeholder="">
 					</div>
 					<div class="form-group col-md-6 col-sm-6">
-						<label for="email-2">Secondary Contact Email Address <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="email-2">Secondary Contact Email Address <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="email" class="form-control input-md" id="email-2" placeholder="">
 					</div>
 					<div class="form-group col-md-12 col-sm-12">
-						<button type="submit" class="btn btn-default btn-sm">Add Additional Contact <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></button>
+						<button type="submit" class="btn btn-default btn-sm">Add Additional Contact <i class="glyphicon glyphicon-pencil icon-link"></i></button>
 					</div>
 				</div>
 				<hr/>
-				<h3><i class="fa fa-icon fa-credit-card" style="color: #ff3330"></i> Payment Information</h3>
+				<h3><i class="fa fa-icon fa-credit-card"></i> Payment Information</h3>
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="bank-account">Bank Account Name <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="bank-account">Bank Account Name <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="bank-account" placeholder="">
 					</div>
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="iban">IBAN <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="iban">IBAN <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="iban" placeholder="">
 					</div>
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="bic-swift">BIC/SWIFT <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="bic-swift">BIC/SWIFT <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="text" class="form-control input-md" id="bic-swift" placeholder="">
 					</div>
 				</div>
 				<hr/>
-				<h3><i class="fa fa-icon fa-shield" style="color: #ff3330"></i> Proof of authenticity</h3>
+				<h3><i class="fa fa-icon fa-shield"></i> Proof of authenticity</h3>
 				<hr class="invisible"/>
 				<div class="row">
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="photo-id">Photo ID <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="photo-id">Photo ID <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="file" value="upload" class="form-control input-md" id="photo-id">
 					</div>
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="proof-address">Proof of Address <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="proof-address">Proof of Address <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="file" value="upload" class="form-control input-md" id="proof-address">
 					</div>
 					<div class="form-group col-md-4 col-sm-4">
-						<label for="proof-registration">Proof of Registration <i class="glyphicon glyphicon-pencil icon-link" style="color: #ff3330"></i></label>
+						<label for="proof-registration">Proof of Registration <i class="glyphicon glyphicon-pencil icon-link"></i></label>
 						<input type="file" value="upload" class="form-control input-md" id="proof-registration">
 					</div>
 				</div>
@@ -164,10 +164,9 @@
 
 		<div class="social-media text-center">
 			<spam style="padding-right:10px">Join us on</spam>
-			<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 		</div>
 
 		<!-- Firebase -->

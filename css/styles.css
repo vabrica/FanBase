@@ -1,3 +1,18 @@
+.body-artist{
+    background:url(fan_1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover
+}
+.body-fan{
+    background:url(fan_2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover
+}
+
 h1 {
     text-align: center;
     background-color: transparent;
@@ -11,7 +26,6 @@ h2{
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
-
 }
 
 h5{
@@ -62,9 +76,24 @@ body {
     cursor: pointer !important;
     pointer-events: all
 }
+
+.right-inner-addon .icon-link:hover {
+    color: #e0e1e2;
+}
 .icon-link {
     cursor: pointer !important;
     pointer-events: all
+}
+.glyphicon, .fa{
+    color: #ff3330;
+}
+
+.glyphicon:hover {
+    color: #e0e1e2;
+}
+
+.btnH:hover{
+    color: #e0e1e2;
 }
 
 .fanbase-pink {
@@ -91,6 +120,25 @@ body {
 .form-fanbase {
     background-color: rgba(255,255,255,0.8);
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 10px
 }
+.banner-img{
+    height: 725px !important;
+    width: 100%;
+   
+}
+
+.avatar{
+    height: 300px;
+    width: 65%;
+    border-radius: 50%;
+}
+
+.text-aboutus{
+    text-align: justify;
+    margin-top:20px; 
+    margin-bottom:20px; 
+
+}
+
 

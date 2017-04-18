@@ -9,7 +9,7 @@
 	<title>Login/Register - FanBase</title>
 
 	<!-- FavIcon -->
-	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -36,13 +36,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li class="active"><a href="#">Login-Register</a></li>
-					<li><a href="#about us">About us &amp; Contact</a></li>						
+					<li><a href="about_us.html">About us &amp; Contact</a></li>						
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
@@ -67,100 +67,99 @@
 		<div class="row">
 			<div class="col-xs-6">
 				
-					<h3>Fans <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control input-md" id="txtEmailFanL" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control input-md" id="txtPasswordFanL"  placeholder="Password">
-					</div>
-					<p><button id="btnLoginFan" class="btn btn-secondary">Login</button></p>
-					<p><button id="btnLogoutFan" class="btn btn-action hide">Log out</button></p>
-					<p><span class="psw">Forgot <a href="#">password?</a></span></p>
+				<h3>Fans <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control input-md" id="txtEmailFanL" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control input-md" id="txtPasswordFanL"  placeholder="Password">
+				</div>
+				<p><button id="btnLoginFan" class="btn btn-default fanbase-pink">Login</button></p>
+				<p><button id="btnLogoutFan" class="btn btn-action hide">Log out</button></p>
+				<p><span class="psw">Forgot <a href="#">password?</a></span></p>
 				
 			</div>
 			<div class="col-xs-6">
 				
-					<h3>Artists <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" id="txtEmailArtL" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control" id="txtPasswordArtL"  placeholder="Password">
-					</div>
-					<p><button id="btnLoginArt" class="btn btn-secondary">Login</button></p>
-					<p><button id="btnLogoutArt" class="btn btn-action hide">Log out</button></p>
-					<p><span class="psw">Forgot <a href="#">password?</a></span></p>
+				<h3>Artists <i class="fa fa-id-badge" style="color: #ff3330" aria-hidden="true"></i></h3>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" id="txtEmailArtL" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" id="txtPasswordArtL"  placeholder="Password">
+				</div>
+				<p><button id="btnLoginArt" class="btn btn-default fanbase-pink">Login</button></p>
+				<p><button id="btnLogoutArt" class="btn btn-action hide">Log out</button></p>
+				<p><span class="psw">Forgot <a href="#">password?</a></span></p>
 				
 			</div>
 		</div>
 		<h2 style="color:#ff3330">New to FanBase</h2>
 		<div class="row">
-		
-				<div class="col-xs-6">
-					<h3>Fans <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control input-md" id="txtEmailFan" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label>Confirm email</label>
-						<input type="email" class="form-control input-md" id="confemailF" placeholder="Email" onblur="confirmEmailF()">
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control input-md" id="txtPasswordFan"  placeholder="Password">
-					</div>
-					<p><a id="btnSignUpFan" class="btn btn-default fanbase-pink" href="#" role="button">Sign Up</a></p>
 			
+			<div class="col-xs-6">
+				<h3>Fans <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control input-md" id="txtEmailFan" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label>Confirm email</label>
+					<input type="email" class="form-control input-md" id="confemailF" placeholder="Email" onblur="confirmEmailF()">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control input-md" id="txtPasswordFan"  placeholder="Password">
+				</div>
+				<p><a id="btnSignUpFan" class="btn btn-default fanbase-pink" href="#" role="button">Sign Up</a></p>
+				
 			</div>
 			<div class="col-xs-6">
 				
-					<h3>Artists <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" id="txtEmailArt" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label>Confirm email</label>
-						<input type="email" class="form-control input-md" id="confemailA" placeholder="Email" onblur="confirmEmailA()">
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control" id="txtPasswordArt"  placeholder="Password">
-					</div>
-					<p><a id="btnSignUpArt" class="btn btn-default fanbase-pink" href="#" role="button" >Sign Up</a></p>	
-					
+				<h3>Artists <i class="fa fa-user-plus" style="color: #ff3330" aria-hidden="true"></i></h3>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" id="txtEmailArt" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label>Confirm email</label>
+					<input type="email" class="form-control input-md" id="confemailA" placeholder="Email" onblur="confirmEmailA()">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" id="txtPasswordArt"  placeholder="Password">
+				</div>
+				<p><a id="btnSignUpArt" class="btn btn-default fanbase-pink" href="#" role="button" >Sign Up</a></p>	
+				
 			</div>
-		
+			
+		</div>
 	</div>
-</div>
 
 
-<div class="social-media text-center">
-	<spam style="padding-right:10px">Join us on</spam>
-	<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-	<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-	<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
-</div>
+	<div class="social-media text-center">
+		<spam style="padding-right:10px">Join us on</spam>
+		<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!--Firebase-->
-<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 
-<!-- my js file -->
-<script type="text/javascript" src="js/login_registration-firebase.js"></script>
+	<!-- my js file -->
+	<script type="text/javascript" src="js/login_registration-firebase.js"></script>
 
 </body>
 </html>

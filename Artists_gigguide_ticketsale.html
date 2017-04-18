@@ -9,7 +9,7 @@
 	<title>Artist Gig Guide and Ticket Sale - FanBase</title>
 
 	<!-- FavIcon -->
-	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -37,13 +37,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="login_registration.html">Login-Register</a></li>
-					<li><a href="#about us">About us &amp; Contact</a></li>		
+					<li><a href="about_us.html">About us &amp; Contact</a></li>		
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
@@ -63,55 +63,53 @@
 	<div id="main_div" class="container relative" style=" text-align:center; margin-top:50px">
 		<h1 style="margin-top:50px">Priority Tickets for Real Fans</h1>
 		<div class="form-fanbase">
-			<p class="absolute-text">Welcome U2</a></p>
-			<div class="row"> <!-- put the bandName here! -->
-					<div class="form-group col-md-1 col-sm-1">
-						<input type="text" class="form-control input-md" id="numTickets" placeholder="Num">
-					</div>
-					<div class="form-group col-md-3 col-sm-3">
-						<input type="text" class="form-control input-md" id="venue" placeholder="Venue">
-					</div>
-					<div class="form-group col-md-1 col-sm-1">
-						<input type="text" class="form-control input-md" id="" placeholder="ID">
-					</div>
-					<div class="form-group col-md-2 col-sm-2">
-						<input type="text" class="form-control input-md" id="date" placeholder="Date">
-					</div>
-					<div class="form-group col-md-1 col-sm-1">
-						<input type="text" class="form-control input-md" id="time" placeholder="Time">
-					</div>
-					<div class="form-group col-md-2 col-sm-2">
-						<input type="text" class="form-control input-md" id="priceTickets" placeholder="Price">
-					</div>
-					<button type="submit" class="btn btn-default fanbase-pink">Submit</button>
-					<i class="glyphicon glyphicon-plus" style="padding-left:15px; color: #ff3330" aria-hidden="true"></i>
-					<!-- Add JS function to add row -->
+			<h2 class="absolute-text">Welcome U2</a></h2>
+			<div class="input_fields_wrap row"> <!-- put the bandName here! -->
+				<div class="form-group col-md-1 col-sm-1">
+					<input type="text" class="form-control input-md" id="numTickets" placeholder="Num">
 				</div>
-				
+				<div class="form-group col-md-3 col-sm-3">
+					<input type="text" class="form-control input-md" id="venue" placeholder="Venue">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id=".." placeholder="ID">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id="date" placeholder="Date">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id="time" placeholder="Time">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md"  id="priceTickets" placeholder="Price">
+				</div>	
+			</div>
+			<a href=""><i class="add_field_button glyphicon glyphicon-plus" style="font-size:200%; margin-top:15px; margin-bottom:15px" aria-hidden="true"></i></a>
+			<br>
+			<button type="submit" class="btn btn-default fanbase-pink">Submit</button>
 		</div>
+	</div>
+
+	<div class="social-media text-center">
+		<spam style="padding-right:10px">Join us on</spam>
+		<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
 
 
-		<div class="social-media text-center">
-			<spam style="padding-right:10px">Join us on</spam>
-			<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
-		</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- calendar js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- my js file -->
+	<script type="text/javascript" src="js/artists_gigguide_ticketsale.js"></script>
 
-		<!-- calendar js bootstrap -->
-		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-
-		<!-- my js file -->
-		<script type="text/javascript" src="Fanbase-themed.js"></script>
-
-	</body>
-	</html>
+</body>
+</html>
 

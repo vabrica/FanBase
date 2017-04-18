@@ -34,7 +34,9 @@ function pushArtists(){
   var postRef = mydata.push({'artistName':artistName,'taxNumber':taxNumber,'dateCreation':dateCreation, 'aboutArtist': aboutArtist,'postalAddress':postalAddress,'mainContact':mainContact, 'secContact': secContact,'mainEmail':mainEmail,'secEmail':secEmail, 'bankAccount': bankAccount,'iban':iban,'bicSwift':bicSwift, 'photoId': photoId,'proofAddress':proofAddress,'proofRegistration':proofRegistration, 'valid': "false"}); // adds unique key then the following child nodes
   var postID = postRef.key;  // saves unique key from above
 
-  console.log(postID) // posts unique key to console so it can be checked
+  console.log(postID); // posts unique key to console so it can be checked
+
+  $('#myModal').modal('show')
 }
 
 var photoFile = document.getElementById("photo-id");

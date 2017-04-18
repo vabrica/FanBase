@@ -9,7 +9,7 @@
 	<title>Fan Signup - FanBase</title>
 
 	<!-- FavIcon -->
-	<link rel="shortcut icon" type="image/x-icon" href="F.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,13 +35,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="F.png" width="88" /></a>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="login_registration.html">Login-Register</a></li>
-					<li><a href="#about us">About us &amp; Contact</a></li>					
+					<li><a href="about_us.html">About us &amp; Contact</a></li>					
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
@@ -104,9 +104,9 @@
 						<input type="text" class="form-control input-md" id="credit-card" placeholder="">	
 					</div>
 					<div class="form-group col-md-4 col-sm-12">
-						<img src="visa.png" alt="visa" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 48px;" />
-						<img src="master.png" alt="master" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 48px;" />
-						<img src="amex.png" alt="amex" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 43px;" />	
+						<img src="images/visa.png" alt="visa" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 48px;" />
+						<img src="images/master.png" alt="master" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 48px;" />
+						<img src="images/amex.png" alt="amex" hspace="5" vspace="5" border="0" style="padding-top: 13px; width: 43px;" />	
 					</div>
 				</div>
 				<div class="row">
@@ -119,7 +119,7 @@
 						<input type="text" class="form-control input-md" id="cvn" placeholder="">
 					</div>
 					<div class="form-group col-md-3 col-sm-3">
-						<img src="card-back.png" alt="Card security code (CCV)" hspace="5" vspace="5" border="0" style=" padding-top: 20px; width: 48px;" />		
+						<img src="images/card-back.png" alt="Card security code (CCV)" hspace="5" vspace="5" border="0" style=" padding-top: 20px; width: 48px;" />		
 					</div>
 				</div>
 				<hr/>
@@ -135,24 +135,41 @@
 						<input type="file" value="upload" class="form-control input-md" id="proof-address">
 					</div>
 				</div>
-				<button type="submit" class="btn btn-default fanbase-pink" onclick="pushFans()">Submit registration for approval</button>
+				<button type="button" class="btn btn-default fanbase-pink" onclick="pushFans()">Submit registration for approval</button>
 				<hr/>
 				<progress value="0" max="100" id="uploader">0%</progress>
 			</form>
 		</div>
 
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body">
+						<h3>Thank you for your registration</h3>
+						<br>
+						<p>We will be in touch soon</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<a href="index.html" class="btn btn-default fanbase-pink">Finish</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="social-media text-center">
 			<spam style="padding-right:10px">Join us on</spam>
-			<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 		</div>
 
 		<!-- Firebase -->
 		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
-		<!-- Firebase - Artist signup !!-->
+		<!-- Firebase - Fan signup !!-->
 		<script src="js/reg_fan_js.js"></script>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
