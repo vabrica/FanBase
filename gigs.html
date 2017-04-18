@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gigs - FanBase</title>
+
+	<!-- FavIcon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+	<!-- Font awsome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Date picker styles -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body-fan">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login_registration.html">Login-Register</a></li>
+					<li><a href="about_us.html">About us &amp; Contact</a></li>									
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="login_registration.html">Login</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container relative" style=" text-align:center; margin-top:50px">
+		<h1 style="margin-top:50px">Gigs</h1>
+		<div class="form-fanbase">
+			<!-- Container (TOUR Section) -->
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<div class="thumbnail">
+						<img src="images/u2.png" alt="Galway" width="400" height="300">
+						<h4>U2</h4>
+						<p>Galway - ROISIN DUBH</p>
+						<p>Sat May 6 - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('150')">Buy Tickets</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="thumbnail">
+						<img src="images/ed_sheeran.png" alt="Cork" width="400" height="300">
+						<h4>Ed Sheeran</h4>
+						<p>Cork - LIVE AT THE MARQUEE</p>
+						<p>Sat July 15 - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('80')">Buy Tickets</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="thumbnail">
+						<img src="images/adele.png" alt="Dublin" width="400" height="500">
+						<h4>Adele</h4>
+						<p>Dublin - 3 ARENA</p>
+						<p>Sat August - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('120')">Buy Tickets</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"></button>
+						<h4><span class="glyphicon glyphicon-shopping-cart"></span> Tickets</h4>
+					</div>
+					<!-- model-body-->
+					<div class="modal-body text-left">
+						<form role="form" method= "post">
+							<!-- calculating price-->
+							<input type="hidden" name="price-rules" value="">
+							<p style="margin-top: 25px; margin-bottom: 5px"><span class="fa fa-ticket" style="margin-right: 5px"></span>Please select QTY - Limit: 4 tickets per Fan</p>
+							<select name="quantity" class="qty">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+							<span id="total"></span>
+							<p style="margin-top: 25px; margin-bottom: 5px"><span class="glyphicon glyphicon-credit-card" style="margin-right: 5px"></span>Please enter credit card number</p>
+							<input type="text" name="card" class="form-control" id="credtcd" placeholder="Credit Card Number">
+							<p style="margin-top: 25px; margin-bottom: 5px"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Send confirmation to</p>
+							<input type="text" name="email" class="form-control" id="usrname" placeholder="Enter email">
+							<button class="btn btn-block fanbase-pink" id="clickButton" type="submit" style="margin-top: 25px; margin-bottom: 25px">Pay <span class="glyphicon glyphicon-ok" style="color: white"></span></button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a><i class="pull-left" data-dismiss="modal" style="font-size: 200%"><span class="glyphicon glyphicon-remove"></span></i></a>
+						<p><a href="about_us.html">Need help?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			<div class="social-media text-center">
+				<spam style="padding-right:10px">Join us on</spam>
+				<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</div>
+
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+			<!-- calendar js bootstrap -->
+			<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+			<!-- my js file -->
+			<script type="text/javascript" src="js/gigs.js"></script>
+
+			</html>
+
