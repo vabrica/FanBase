@@ -67,28 +67,37 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="thumbnail">
 						<img src="images/u2.png" alt="Galway" width="400" height="300">
-						<h4>U2</h4>
-						<p>Galway - ROISIN DUBH</p>
-						<p>Sat May 6 - 2017</p>
-						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('150')">Buy Tickets</button>
+						<h4 id="name0">U2</h4>
+						<p id="venue0">Galway - ROISIN DUBH</p>
+						<p id="date0">Sat May 6 - 2017</p>
+						<p id="id0">Sat July 15 - 2017</p>
+						<p id="numTickets0">Sat July 15 - 2017</p>
+						<p id="priceTickets0">Sat July 15 - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="selectionInfo('0')">Buy Tickets</button>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="thumbnail">
 						<img src="images/ed_sheeran.png" alt="Cork" width="400" height="300">
-						<h4>Ed Sheeran</h4>
-						<p>Cork - LIVE AT THE MARQUEE</p>
-						<p>Sat July 15 - 2017</p>
-						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('80')">Buy Tickets</button>
+						<h4 id="name1">Ed Sheeran</h4>
+						<p id="venue1">Cork - LIVE AT THE MARQUEE</p>
+						<p id="date1">Sat July 15 - 2017</p>
+						<p id="id1">Sat July 15 - 2017</p>
+						<p id="numTickets1">Sat July 15 - 2017</p>
+						<p id="priceTickets1">Sat July 15 - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="selectionInfo('1')">Buy Tickets</button>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="thumbnail">
 						<img src="images/adele.png" alt="Dublin" width="400" height="500">
-						<h4>Adele</h4>
-						<p>Dublin - 3 ARENA</p>
-						<p>Sat August - 2017</p>
-						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="LoadPrice('120')">Buy Tickets</button>
+						<h4 id="name2">Adele</h4>
+						<p id="venue2">Dublin - 3 ARENA</p>
+						<p id="date2">Sat August - 2017</p>
+						<p id="id2">Sat July 15 - 2017</p>
+						<p id="numTickets2">Sat July 15 - 2017</p>
+						<p id="priceTickets2">Sat July 15 - 2017</p>
+						<button class="btn btn-default fanbase-pink" data-toggle="modal" data-target="#myModal" onclick="selectionInfo('2')">Buy Tickets</button>
 					</div>
 				</div>
 			</div>
@@ -108,7 +117,7 @@
 							<!-- calculating price-->
 							<input type="hidden" name="price-rules" value="">
 							<p style="margin-top: 25px; margin-bottom: 5px"><span class="fa fa-ticket" style="margin-right: 5px"></span>Please select QTY - Limit: 4 tickets per Fan</p>
-							<select name="quantity" class="qty">
+							<select name="quantity" id="ticketQty" class="qty">
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -119,7 +128,7 @@
 							<input type="text" name="card" class="form-control" id="credtcd" placeholder="Credit Card Number">
 							<p style="margin-top: 25px; margin-bottom: 5px"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Send confirmation to</p>
 							<input type="text" name="email" class="form-control" id="usrname" placeholder="Enter email">
-							<button class="btn btn-block fanbase-pink" id="clickButton" type="submit" style="margin-top: 25px; margin-bottom: 25px">Pay <span class="glyphicon glyphicon-ok" style="color: white"></span></button>
+							<button class="btn btn-block fanbase-pink" id="clickButton" type="submit" style="margin-top: 25px; margin-bottom: 25px" onclick="buyTickets()">Pay <span class="glyphicon glyphicon-ok" style="color: white"></span></button>
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -130,7 +139,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 
 
@@ -152,10 +160,13 @@
 
 	<!-- calendar js bootstrap -->
 	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
 	<!-- my js file -->
 	<script type="text/javascript" src="js/gigs.js"></script>
-
+	
 </body>
 </html>
 

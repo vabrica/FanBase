@@ -54,7 +54,22 @@ btnSignUpFan.addEventListener('click', e=> {
 	const promiseF = authF
 		.createUserWithEmailAndPassword(emailF,passPF)
 		.then(function(){
-			window.location.href = 'Registration_Fan.html';
+			//Sign In Fan
+			const promiseF2 = authF.signInWithEmailAndPassword(emailF,passPF);
+			promiseF2.catch(e => console.log(e.message));
+			var user = firebase.auth().currentUser;
+			var uid = user.uid;
+			alert("uid = " + uid);
+			
+			
+			firebase.auth().onAuthStateChanged(user => {
+			if(user) {
+						window.location = 'Registration_Fan.html'; //After successful login, user will be redirected to Registration_Fan.html
+					}
+});
+			
+			
+			
 		})
 		.catch(e => console.log(e.message));
 });
@@ -66,9 +81,23 @@ btnSignUpArt.addEventListener('click', e=> {
 	const authA = firebase.auth();
 
 	const promiseA = authA
-		.createUserWithEmailAndPassword(emailA,passPA);
-		then(function(){
-			window.location.href = 'Registration_Artist.html';
+		.createUserWithEmailAndPassword(emailA,passPA)
+		.then(function(){
+			//Sign In Artist
+			const promiseA2 = authA.signInWithEmailAndPassword(emailA,passPA);
+			promiseA2.catch(e => console.log(e.message));
+			var user = firebase.auth().currentUser;
+			var uid = user.uid;
+			alert("uid = " + uid);
+			
+			
+			firebase.auth().onAuthStateChanged(user => {
+			if(user) {
+						window.location = 'Registration_Artist.html'; //After successful login, user will be redirected to Registration_Artist.html
+					}
+});
+			
+			
 		})
 		.catch(e => console.log(e.message));
 });
@@ -120,4 +149,6 @@ function confirmEmailA() {
 	if(emailA != conflA) {
 		alert('Email Not Matching!');
 	}
+	
+	
 }
