@@ -125,7 +125,12 @@
 							</select>
 							<span id="total"></span>
 							<p style="margin-top: 25px; margin-bottom: 5px"><span class="glyphicon glyphicon-credit-card" style="margin-right: 5px"></span>Please enter credit card number</p>
-							<input type="text" name="card" class="form-control" id="credtcd" placeholder="Credit Card Number">
+							<div id="card-element">
+								<!-- a Stripe Element will be inserted here. -->
+							</div>
+
+							<!-- Used to display form errors -->
+							<div id="card-errors"></div>
 							<p style="margin-top: 25px; margin-bottom: 5px"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Send confirmation to</p>
 							<input type="text" name="email" class="form-control" id="usrname" placeholder="Enter email">
 							<button class="btn btn-block fanbase-pink" id="clickButton" type="submit" style="margin-top: 25px; margin-bottom: 25px" onclick="buyTickets()">Pay <span class="glyphicon glyphicon-ok" style="color: white"></span></button>
@@ -160,6 +165,9 @@
 
 	<!-- calendar js bootstrap -->
 	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+	<!-- Stripe Api -->
+	<script src="https://js.stripe.com/v3/"></script>
 	
 	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
