@@ -43,6 +43,8 @@
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="login_registration.html">Login-Register</a></li>
+					<li class="active"><a href="my_profile_fan.html">Fan</a></li>
+					<li><a href="my_profile_artist.html">Artists</a></li>
 					<li><a href="about_us.html">About us &amp; Contact</a></li>										
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -66,7 +68,7 @@
 		<div class="form-fanbase">
 			<div style="background: #fff url(images/AC_fan.png) no-repeat center 10%;
 			min-height: 600px; background-size: 600px;padding-top:430px">
-			<h3 class="absolute-text">Welcome Alice</h3>
+			<h3 class="absolute-text" id="nameHeader"></h3>
 		</div>
 		<h2>Personal Profile<a href ="fan_personaldetails.html"><i class="fa fa-id-badge icon-link btnH" style="padding-left:15px" aria-hidden="true"></i></a></h2>
 		<h2>Fan Preferences<a href="fan_preferences.html"><i class="glyphicon glyphicon-heart icon-link" style="padding-left:15px" aria-hidden="true"></i></a></h2> 
@@ -82,6 +84,9 @@
 	</div>
 
 
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -91,7 +96,8 @@
 	<!-- calendar js bootstrap -->
 	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 
-	<!-- my js file -->
+	<!-- Firebase - Artist signup !!-->
+	<script src="js/profile_fan.js"></script>
 
 
 </body>

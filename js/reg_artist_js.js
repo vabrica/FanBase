@@ -41,7 +41,7 @@ function pushArtists()
 
   var mydata = database.ref('/Artists/' + uid);  // creates ref at Fans
   var postRef = mydata.set({'artistName':artistName,'taxNumber':taxNumber,'dateCreation':dateCreation, 'aboutArtist': aboutArtist,'postalAddress':postalAddress,'mainContact':mainContact, 'secContact': secContact,'mainEmail':mainEmail,'secEmail':secEmail, 'bankAccount': bankAccount,'iban':iban,'bicSwift':bicSwift, 'photoId': photoId,'proofAddress':proofAddress,'proofRegistration':proofRegistration, 'valid': "false"}); // adds UID as unique key then the following child nodes
-    
+  
   $('#myModal').modal('show')
 }
 
@@ -51,7 +51,7 @@ var registrationFile = document.getElementById("proof-registration");
 
 
       //Listen for file selection
-photoFile.addEventListener('change', function(e) {
+      photoFile.addEventListener('change', function(e) {
 
   //Get File
   var file=e.target.files[0];

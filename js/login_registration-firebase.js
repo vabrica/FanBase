@@ -30,8 +30,13 @@ btnLoginFan.addEventListener('click', e=> {
 	const passPF = txtPasswordFanL.value;
 	const authF = firebase.auth();
 //Sign In Fan
-const promiseF = authF.signInWithEmailAndPassword(emailF,passPF);
-promiseF.catch(e => console.log(e.message));
+const promiseF = authF
+.signInWithEmailAndPassword(emailF,passPF)
+.then(function(){
+	window.location.href = 'my_profile_fan.html';
+})
+.catch(e => console.log(e.message));
+
 });
 
 //Add Login Event Artist
@@ -40,10 +45,13 @@ btnLoginArt.addEventListener('click', e=> {
 	const passPA = txtPasswordArtL.value;
 	const authA = firebase.auth();
 //Sign In Artist
-const promiseA = authA.signInWithEmailAndPassword(emailA,passPA);
-promiseA.catch(e => console.log(e.message));
+const promiseA = authA
+.signInWithEmailAndPassword(emailA,passPA)
+.then(function(){
+	window.location.href = 'my_profile_artist.html';
+})
+.catch(e => console.log(e.message));
 });
-
 
 //Add SignUp Event Fan
 btnSignUpFan.addEventListener('click', e=> {
@@ -52,26 +60,22 @@ btnSignUpFan.addEventListener('click', e=> {
 	const authF = firebase.auth();
 
 	const promiseF = authF
-		.createUserWithEmailAndPassword(emailF,passPF)
-		.then(function(){
+	.createUserWithEmailAndPassword(emailF,passPF)
+	.then(function(){
 			//Sign In Fan
 			const promiseF2 = authF.signInWithEmailAndPassword(emailF,passPF);
 			promiseF2.catch(e => console.log(e.message));
 			var user = firebase.auth().currentUser;
 			var uid = user.uid;
 			alert("uid = " + uid);
-			
-			
+
 			firebase.auth().onAuthStateChanged(user => {
-			if(user) {
+				if(user) {
 						window.location = 'Registration_Fan.html'; //After successful login, user will be redirected to Registration_Fan.html
 					}
-});
-			
-			
-			
+				});	
 		})
-		.catch(e => console.log(e.message));
+	.catch(e => console.log(e.message));
 });
 
 //Add SignUp Event Artist
@@ -81,8 +85,8 @@ btnSignUpArt.addEventListener('click', e=> {
 	const authA = firebase.auth();
 
 	const promiseA = authA
-		.createUserWithEmailAndPassword(emailA,passPA)
-		.then(function(){
+	.createUserWithEmailAndPassword(emailA,passPA)
+	.then(function(){
 			//Sign In Artist
 			const promiseA2 = authA.signInWithEmailAndPassword(emailA,passPA);
 			promiseA2.catch(e => console.log(e.message));
@@ -90,16 +94,13 @@ btnSignUpArt.addEventListener('click', e=> {
 			var uid = user.uid;
 			alert("uid = " + uid);
 			
-			
 			firebase.auth().onAuthStateChanged(user => {
-			if(user) {
+				if(user) {
 						window.location = 'Registration_Artist.html'; //After successful login, user will be redirected to Registration_Artist.html
 					}
-});
-			
-			
+				});	
 		})
-		.catch(e => console.log(e.message));
+	.catch(e => console.log(e.message));
 });
 
 //Log out Fan

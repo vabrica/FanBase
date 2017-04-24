@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 // Get a reference to the database service
 var database = firebase.database();
-  
+
 
 	// pushing info into firebase
 	function pushFans()
@@ -126,62 +126,62 @@ var database = firebase.database();
 
 
 
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
+		  firebase.auth().onAuthStateChanged(function(user) {
+		  	if (user) {
     // User is signed in.
-	alert("User is signed in");
-	var uid = user.uid;
-	alert("uid = " + uid);
-	
-	var mydata = database.ref();
+    alert("User is signed in");
+    var uid = user.uid;
+    alert("uid = " + uid);
+    
+    var mydata = database.ref();
 
-	 mydata.child('Fans').on('value', 
- 	 function(snapshot) 
-  	{
-		
+    mydata.child('Fans').on('value', 
+    	function(snapshot) 
+    	{
+    		
     	var firstName = snapshot.child(uid + "/firstName").val(); // can be UID instead off push
-		var surname = snapshot.child(uid + "/surname").val();
-		var dob = snapshot.child(uid + "/dob").val();
-		var addressLine1 = snapshot.child(uid + "/addressLine1").val();
-		var addressLine2 = snapshot.child(uid + "/addressLine2").val();
-		var addressLine3 = snapshot.child(uid + "/addressLine3").val();
-		var creditCard = snapshot.child(uid + "/creditCard").val();
-		var expiryDate = snapshot.child(uid + "/expiryDate").val();
-		var cvn = snapshot.child(uid + "/cvn").val();
-		var photoId = snapshot.child(uid + "/photoId").val();
-		var proofAddress = snapshot.child(uid + "/proofAddress").val();
-		
-		alert("firstName snapshot " + firstName);
-		alert("surname snapshot " + surname);
-			
+    	var surname = snapshot.child(uid + "/surname").val();
+    	var dob = snapshot.child(uid + "/dob").val();
+    	var addressLine1 = snapshot.child(uid + "/addressLine1").val();
+    	var addressLine2 = snapshot.child(uid + "/addressLine2").val();
+    	var addressLine3 = snapshot.child(uid + "/addressLine3").val();
+    	var creditCard = snapshot.child(uid + "/creditCard").val();
+    	var expiryDate = snapshot.child(uid + "/expiryDate").val();
+    	var cvn = snapshot.child(uid + "/cvn").val();
+    	var photoId = snapshot.child(uid + "/photoId").val();
+    	var proofAddress = snapshot.child(uid + "/proofAddress").val();
+    	
+    	alert("firstName snapshot " + firstName);
+    	alert("surname snapshot " + surname);
+    	
     	document.getElementById("Fname").value=firstName;
-		document.getElementById("Surname").value=surname;
-		document.getElementById("DOB").value=dob;
-		document.getElementById("address1").value=addressLine1;
-		document.getElementById("address2").value=addressLine2;
-		document.getElementById("address3").value=addressLine3;
-		document.getElementById("credit-card").value=creditCard;
-		document.getElementById("expiryDate").value=expiryDate;
-		document.getElementById("cvn").value=cvn;
-		document.getElementById("photo-id").value=photoId;
-		document.getElementById("proof-address").value=proofAddress;
-		
-		document.getElementById("nameHeader").innerHTML=" " + firstName + " " + surname + " Details";
-		
+    	document.getElementById("Surname").value=surname;
+    	document.getElementById("DOB").value=dob;
+    	document.getElementById("address1").value=addressLine1;
+    	document.getElementById("address2").value=addressLine2;
+    	document.getElementById("address3").value=addressLine3;
+    	document.getElementById("credit-card").value=creditCard;
+    	document.getElementById("expiryDate").value=expiryDate;
+    	document.getElementById("cvn").value=cvn;
+    	document.getElementById("photo-id").value=photoId;
+    	document.getElementById("proof-address").value=proofAddress;
+    	
+    	document.getElementById("nameHeader").innerHTML=" " + firstName + " " + surname + " Details";
+    	
 
- 	 }
-	);
-	
-  } else {
+    }
+    );
+    
+} else {
     // No user is signed in.
-	alert("No user signed in");
-  }
+    alert("No user signed in");
+}
 });
 
 
-	
+		  
 
 
 
 
-  
+		  

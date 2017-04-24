@@ -219,8 +219,8 @@ var registrationFile = document.getElementById("proof-registration");
     }
     );
     
-} else {
+  } else {
     // No user is signed in.
     alert("No user signed in");
-}
+  }
 });

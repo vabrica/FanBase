@@ -5,7 +5,7 @@ $(document).ready(function(){
 	});
 
 	$('.carousel').carousel({
-	  interval: 10000
+		interval: 10000
 	});
 
 	$('.search-kw').on("click", function() {
@@ -29,10 +29,3 @@ function inactive (){
 	}
 }
 
-
-
-
-
-	
-
-	
