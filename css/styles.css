@@ -122,6 +122,7 @@ body {
     padding: 40px;
     border-radius: 10px
 }
+
 .banner-img{
     height: 725px !important;
     width: 100%;
@@ -129,7 +130,7 @@ body {
 }
 
 .avatar{
-    height: 300px;
+    /*height: 300px;*/
     width: 65%;
     border-radius: 50%;
 }
@@ -140,7 +141,6 @@ body {
     margin-bottom:20px; 
 
 }
-
 
 .StripeElement {
   background-color: white;
