@@ -124,15 +124,15 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 	}
 });
 
-firebase.auth().onAuthStateChanged(firebaseUser => {
-	if(firebaseUser) {
-		console.log(firebaseUser);
-		btnLogouanArt.classList.remove('hide');
-	}else{
-		console.log('logged out');
-		btnLogouanArt.classList.add('hide');
-	}
-});
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+// 	if(firebaseUser) {
+// 		console.log(firebaseUser);
+// 		btnLogouanArt.classList.remove('hide');
+// 	}else{
+// 		console.log('logged out');
+// 		btnLogouanArt.classList.add('hide');
+// 	}
+// });
 
 }()); /* end firebase */
 
