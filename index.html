@@ -107,21 +107,24 @@
 		<form action="#" style="width:30%" class="center-block">
 		
 			<div class="form-group right-inner-addon">
-				<i class="glyphicon glyphicon-search icon-link search-kw"></i>
-				<input type="search" class="form-control" style="font-family: 'Special Elite', cursive;" placeholder="Search for Artists, City or Venue" />
+				<i class="glyphicon glyphicon-search icon-link search-kw" id="run-search"></i>
+				<input type="text" class="form-control" id="searchbox" placeholder="Search for Artists, City or Venue" />
 			</div>
 			<div class="input-daterange input-group" id="datepicker">
 				<div class="form-group right-inner-addon">
 					<i class="glyphicon glyphicon-calendar icon-link"></i>
-					<input type="text" class="input form-control" style="font-family: 'Special Elite', cursive; " name="start" placeholder="From" />
+					<input type="text" class="input form-control" name="start" placeholder="From" />
 				</div>
 				<span class="input-group-addon" style="visibility: hidden; "></span>
 				<div class="form-group right-inner-addon">
 					<i class="glyphicon glyphicon-calendar icon-link"></i>
-					<input type="text" class="input form-control" style="font-family: 'Special Elite', cursive;" name="end" placeholder="To" />
+					<input type="text" class="input form-control" name="end" placeholder="To" />
 				</div>
 			</div>
 		</form>
+
+		<div id="search-results"></div>
+
 	</div>
 		
 	<div class="container row center-block form-fanbase" style="font-family: 'Special Elite', cursive; margin-top:100px; background-color: #e0e1e2" >
@@ -166,6 +169,9 @@
 
     <!-- calendar js bootstrap -->
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 
     <!-- my js file -->
     <script type="text/javascript" src="js/Fanbase-themed.js"></script>
