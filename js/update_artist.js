@@ -19,7 +19,7 @@ function pushArtists()
 	
 	var user = firebase.auth().currentUser;
 	var uid = user.uid;
-	alert("PUSH Artists UPDATE uid = " + uid);
+	// alert("PUSH Artists UPDATE uid = " + uid);
 
 	var artistName = document.getElementById("name").value;
 	var taxNumber = document.getElementById("tax-number").value;
@@ -171,7 +171,7 @@ var registrationFile = document.getElementById("proof-registration");
     // User is signed in.
     alert("User is signed in");
     var uid = user.uid;
-    alert("uid = " + uid);
+    // alert("uid = " + uid);
     
     var mydata = database.ref();
 
@@ -195,8 +195,8 @@ var registrationFile = document.getElementById("proof-registration");
     	var proofAddress = snapshot.child(uid + "/proofAddress").val();
     	var proofRegistration = snapshot.child(uid + "/proofRegistration").val();
     	
-    	alert("artistName snapshot " + artistName);
-    	alert("taxNumber snapshot " + taxNumber);
+    	// alert("artistName snapshot " + artistName);
+    	// alert("taxNumber snapshot " + taxNumber);
     	
     	document.getElementById("name").value=artistName;
     	document.getElementById("tax-number").value=taxNumber;

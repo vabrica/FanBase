@@ -18,7 +18,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     alert("User is signed in");
     var uid = user.uid;
-    alert("uid = " + uid);
+    // alert("uid = " + uid);
     
     var mydata = database.ref();
 
@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     	var proofAddress = snapshot.child(uid + "/proofAddress").val();
     	var proofRegistration = snapshot.child(uid + "/proofRegistration").val();
     	
-    	alert("artistName snapshot " + artistName);
+    	// alert("artistName snapshot " + artistName);
     	//alert("taxNumber snapshot " + taxNumber);
     	
     	// document.getElementById("name").value=artistName;
@@ -61,10 +61,14 @@ firebase.auth().onAuthStateChanged(function(user) {
     	// document.getElementById("proof-address").value=proofAddress;
     	// document.getElementById("proof-registration").value=proofRegistration;
     	
-    	document.getElementById("nameHeader").innerHTML="Welcome " + artistName;
+    	//check
+        if(artistName == null){
+            alert("You must be signed in as an Artist to view this profile")
+            window.location = 'index.html';
+        }
 
+        document.getElementById("nameHeader").innerHTML="Welcome " + artistName;
 
-    	
     }
     );
 }

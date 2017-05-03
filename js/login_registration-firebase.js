@@ -67,7 +67,7 @@ btnSignUpFan.addEventListener('click', e=> {
 			promiseF2.catch(e => console.log(e.message));
 			var user = firebase.auth().currentUser;
 			var uid = user.uid;
-			alert("uid = " + uid);
+			// alert("uid = " + uid);
 
 			firebase.auth().onAuthStateChanged(user => {
 				if(user) {
@@ -92,7 +92,7 @@ btnSignUpArt.addEventListener('click', e=> {
 			promiseA2.catch(e => console.log(e.message));
 			var user = firebase.auth().currentUser;
 			var uid = user.uid;
-			alert("uid = " + uid);
+			// alert("uid = " + uid);
 			
 			firebase.auth().onAuthStateChanged(user => {
 				if(user) {

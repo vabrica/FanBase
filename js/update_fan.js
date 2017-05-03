@@ -19,7 +19,7 @@ var database = firebase.database();
 		
 		var user = firebase.auth().currentUser;
 		var uid = user.uid;
-		alert("PUSH Fans UPDATE uid = " + uid);
+		// alert("PUSH Fans UPDATE uid = " + uid);
 
 		var firstName = document.getElementById("Fname").value;
 		var surname = document.getElementById("Surname").value;
@@ -131,7 +131,7 @@ var database = firebase.database();
     // User is signed in.
     alert("User is signed in");
     var uid = user.uid;
-    alert("uid = " + uid);
+    // alert("uid = " + uid);
     
     var mydata = database.ref();
 
@@ -151,8 +151,8 @@ var database = firebase.database();
     	var photoId = snapshot.child(uid + "/photoId").val();
     	var proofAddress = snapshot.child(uid + "/proofAddress").val();
     	
-    	alert("firstName snapshot " + firstName);
-    	alert("surname snapshot " + surname);
+    	// alert("firstName snapshot " + firstName);
+    	// alert("surname snapshot " + surname);
     	
     	document.getElementById("Fname").value=firstName;
     	document.getElementById("Surname").value=surname;
