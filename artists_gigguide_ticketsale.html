@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Artist Gig Guide and Ticket Sale - FanBase</title>
+
+	<!-- FavIcon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/F.png" />
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+	<!-- Font awsome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Date picker styles -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body-artist">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="images/F.png" width="88" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login_registration.html">Login-Register</a></li>
+					<li><a href="my_profile_fan.html">Fan</a></li>
+					<li><a href="my_profile_artist.html">Artists</a></li>
+					<li><a href="about_us.html">About us &amp; Contact</a></li>		
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="login_registration.html">Login</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	
+	<div id="main_div" class="container relative" style=" text-align:center; margin-top:50px">
+		<h1 style="margin-top:50px">Priority Tickets for Real Fans</h1>
+		<div class="form-fanbase">
+			<h2 class="absolute-text">Welcome U2</a></h2>
+			<div class="input_fields_wrap row"> <!-- put the bandName here! -->
+				<div class="form-group col-md-1 col-sm-1">
+					<input type="text" class="form-control input-md" id="numTickets" placeholder="Num">
+				</div>
+				<div class="form-group col-md-3 col-sm-3">
+					<input type="text" class="form-control input-md" id="venue" placeholder="Venue">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id=".." placeholder="ID">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id="date" placeholder="Date">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md" id="time" placeholder="Time">
+				</div>
+				<div class="form-group col-md-2 col-sm-2">
+					<input type="text" class="form-control input-md"  id="priceTickets" placeholder="Price">
+				</div>	
+			</div>
+			<a href=""><i class="add_field_button glyphicon glyphicon-plus" style="font-size:200%; margin-top:15px; margin-bottom:15px" aria-hidden="true"></i></a>
+			<br>
+			<button type="submit" class="btn btn-default fanbase-pink">Submit</button>
+		</div>
+	</div>
+
+	<div class="social-media text-center">
+		<spam style="padding-right:10px">Join us on</spam>
+		<a href="https://www.facebook.com/fanbase.nuim/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/fanbase_nuim/?hl=en"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/fanbase_nuim_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- calendar js bootstrap -->
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+	<!-- my js file -->
+	<script type="text/javascript" src="js/artists_gigguide_ticketsale.js"></script>
+
+	<!-- my js file -->
+	<script type="text/javascript" src="js/pushGigs.js"></script>
+
+</body>
+</html>
+
