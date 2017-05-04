@@ -17,9 +17,9 @@
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (user) {
     // User is signed in.
-    alert("User is signed in");
+    // alert("User is signed in");
     var uid = user.uid;
-    alert("uid to get artistname = " + uid);
+    // alert("uid to get artistname = " + uid);
     
     var mydata = database.ref();
 
@@ -28,7 +28,7 @@
     	{
 			artistName = snapshot.child(uid + "/artistName").val();  // use as bandName
 			
-			alert("artistName snapshot " + artistName);
+			// alert("artistName snapshot " + artistName);
 			
 		});
     
@@ -41,9 +41,9 @@
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (user) {
     // User is signed in.
-    alert("User is signed in");
+    // alert("User is signed in");
     var uid = user.uid;
-    alert("uid to get numberOfGigs = " + uid);
+    // alert("uid to get numberOfGigs = " + uid);
     
     var mydata = database.ref();
 
@@ -52,7 +52,7 @@
     .then(function(snapshot) 
     {
 			numberOfGigs = snapshot.numChildren(); // get the number of gigs in there
-			alert("numberOfGigs snapshot " + numberOfGigs);
+			// alert("numberOfGigs snapshot " + numberOfGigs);
 		});
     
 } else {
@@ -69,7 +69,7 @@ function pushGigs()
 	
 	var user = firebase.auth().currentUser;
 	var uid = user.uid;
-	alert("PUSH GIGS uid = " + uid);
+	// alert("PUSH GIGS uid = " + uid);
 	
 		var passedDate = document.getElementById("date").value; // get value from the input
 
@@ -95,6 +95,9 @@ function pushGigs()
 		var updatedObj = {};
 		updatedObj[numberOfGigs] = postID;
 		mydata2.update(updatedObj); // Works can only add one gig at a time. Get submit button to move them to a different page?
+
+		alert("Gig created");
+		window.location = 'my_profile_artist.html';
 		
 	}
 
