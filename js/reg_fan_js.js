@@ -17,7 +17,7 @@ firebase.initializeApp(config);
 		
 		var user = firebase.auth().currentUser;
 		var uid = user.uid;
-		alert("PUSH FANS uid = " + uid);
+		// alert("PUSH FANS uid = " + uid);
 		
 		var firstName = document.getElementById("Fname").value;
 		var surname = document.getElementById("Surname").value;

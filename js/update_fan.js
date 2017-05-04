@@ -129,7 +129,7 @@ var database = firebase.database();
 		  firebase.auth().onAuthStateChanged(function(user) {
 		  	if (user) {
     // User is signed in.
-    alert("User is signed in");
+    // alert("User is signed in");
     var uid = user.uid;
     // alert("uid = " + uid);
     
@@ -172,10 +172,10 @@ var database = firebase.database();
     }
     );
     
-} else {
+  } else {
     // No user is signed in.
     alert("No user signed in");
-}
+  }
 });
 
 

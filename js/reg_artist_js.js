@@ -20,7 +20,7 @@ function pushArtists()
 
 	var user = firebase.auth().currentUser;
 	var uid = user.uid;
-	alert("PUSH Artists uid = " + uid);
+	// alert("PUSH Artists uid = " + uid);
 
   var artistName = document.getElementById("name").value;
   var taxNumber = document.getElementById("tax-number").value;
