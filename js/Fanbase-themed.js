@@ -14,22 +14,20 @@ var database = firebase.database();
 
 function doSearch(){
 
-	var search = { 
-		"index": "artists",
-		"type": "artist",
-		//"q": "*"
-	};
-
 	var x = document.getElementById("searchbox").value;
-	search.q=x;
-	console.log(search);
+	var gigs = [];
+	$("#search-results").html("");
 
-	var key = database.ref("search/request").push(search).key;
+	database.ref('Gigs').on('child_added',function(snapshot){ // retrieves all gigs from DB 
+		gigs.push(snapshot.val()); // stores all gigs 
+	});
 
-	database.ref("search/response").on('value',function(snapshot){ // listen to any search responses 
+	var matched = $.grep(gigs, function (element, index) { // grep to search within array
+		return element.bandName.toLowerCase().indexOf(x) != -1; 
+	});
 
-		console.log(snapshot.val());
-
+	$.each(matched, function( index, artist ){
+		$("#search-results").append("<h3>" + artist.bandName + "</h3>Date: " + artist.date + "<br>Venue: " + artist.venue + "<br><a href='gigs.html' class='btn btn-default fanbase-pink'>Buy Tickets</a><hr>");
 	});
 
 }
