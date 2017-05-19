@@ -1,0 +1,9 @@
+[0508/003502.743:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0508/003502.744:ERROR:exception_snapshot_win.cc(87)] thread ID 18944 not found in process
+[0508/003502.744:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0511/100146.681:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0511/100146.683:ERROR:exception_snapshot_win.cc(87)] thread ID 12464 not found in process
+[0511/100146.683:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0511/100804.929:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0511/100804.930:ERROR:exception_snapshot_win.cc(87)] thread ID 2272 not found in process
+[0511/100804.930:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
