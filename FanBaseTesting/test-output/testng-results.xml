@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="210344" started-at="2017-05-12T10:17:25Z" finished-at="2017-05-12T10:20:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="210344" started-at="2017-05-12T10:17:25Z" finished-at="2017-05-12T10:20:56Z">
+      <class name="fanbase.SearchBar">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.SearchBar@27efef64]" name="setUp" is-config="true" duration-ms="4473" started-at="2017-05-12T11:20:26Z" finished-at="2017-05-12T11:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSearchBar()[pri:0, instance:fanbase.SearchBar@27efef64]" name="testSearchBar" duration-ms="8066" started-at="2017-05-12T11:20:31Z" finished-at="2017-05-12T11:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBar -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.SearchBar@27efef64]" name="tearDown" is-config="true" duration-ms="1514" started-at="2017-05-12T11:20:39Z" finished-at="2017-05-12T11:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.SearchBar -->
+      <class name="fanbase.BuyTickets">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.BuyTickets@68c4039c]" name="setUp" is-config="true" duration-ms="7925" started-at="2017-05-12T11:19:04Z" finished-at="2017-05-12T11:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBuyingTickets()[pri:0, instance:fanbase.BuyTickets@68c4039c]" name="testBuyingTickets" duration-ms="22378" started-at="2017-05-12T11:19:12Z" finished-at="2017-05-12T11:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyingTickets -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.BuyTickets@68c4039c]" name="tearDown" is-config="true" duration-ms="5874" started-at="2017-05-12T11:19:35Z" finished-at="2017-05-12T11:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.BuyTickets -->
+      <class name="fanbase.FanbaseLogIn">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.FanbaseLogIn@ae45eb6]" name="setUp" is-config="true" duration-ms="6419" started-at="2017-05-12T11:18:23Z" finished-at="2017-05-12T11:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogIn()[pri:0, instance:fanbase.FanbaseLogIn@ae45eb6]" name="testLogIn" duration-ms="28494" started-at="2017-05-12T11:18:30Z" finished-at="2017-05-12T11:18:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.FanbaseLogIn@ae45eb6]" name="tearDown" is-config="true" duration-ms="6157" started-at="2017-05-12T11:18:58Z" finished-at="2017-05-12T11:19:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.FanbaseLogIn -->
+      <class name="fanbase.ChangeCreditCardDetails">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.ChangeCreditCardDetails@3532ec19]" name="setUp" is-config="true" duration-ms="7191" started-at="2017-05-12T11:17:25Z" finished-at="2017-05-12T11:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testChangeCreditCardDetails()[pri:0, instance:fanbase.ChangeCreditCardDetails@3532ec19]" name="testChangeCreditCardDetails" duration-ms="48513" started-at="2017-05-12T11:17:32Z" finished-at="2017-05-12T11:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangeCreditCardDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.ChangeCreditCardDetails@3532ec19]" name="tearDown" is-config="true" duration-ms="2361" started-at="2017-05-12T11:18:21Z" finished-at="2017-05-12T11:18:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.ChangeCreditCardDetails -->
+      <class name="fanbase.Logout">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.Logout@59f99ea]" name="setUp" is-config="true" duration-ms="4674" started-at="2017-05-12T11:19:41Z" finished-at="2017-05-12T11:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogout()[pri:0, instance:fanbase.Logout@59f99ea]" name="testLogout" duration-ms="34978" started-at="2017-05-12T11:19:45Z" finished-at="2017-05-12T11:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.Logout@59f99ea]" name="tearDown" is-config="true" duration-ms="6235" started-at="2017-05-12T11:20:20Z" finished-at="2017-05-12T11:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.Logout -->
+      <class name="fanbase.FanbaseSignUp">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fanbase.FanbaseSignUp@6f7fd0e6]" name="setUp" is-config="true" duration-ms="3548" started-at="2017-05-12T11:20:40Z" finished-at="2017-05-12T11:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSignUp()[pri:0, instance:fanbase.FanbaseSignUp@6f7fd0e6]" name="testSignUp" duration-ms="10263" started-at="2017-05-12T11:20:44Z" finished-at="2017-05-12T11:20:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fanbase.FanbaseSignUp@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1212" started-at="2017-05-12T11:20:54Z" finished-at="2017-05-12T11:20:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fanbase.FanbaseSignUp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
